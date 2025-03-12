@@ -1,4 +1,4 @@
-import "dotenv/config";
+//import "dotenv/config";
 const userTab = document.querySelector("[data-userWeather]");
 const searchTab = document.querySelector("[data-searchWeather]");
 const userContainer = document.querySelector(".weather-container");
@@ -8,9 +8,9 @@ const grantAccessContainer = document.querySelector(
 const serachForm = document.querySelector("[data-searchForm]");
 const loadingScreen = document.querySelector(".loading-container");
 const userInfoContainer = document.querySelector(".user-info-container");
-dotenv.config();
+// dotenv.config();
 let oldTab = userTab;
-const API_KEY = process.env.weather_key;
+const API_KEY = "dc7e6bb97962e0c88b0da2ac7d24f130";
 oldTab.classList.add("current-tab");
 getFormSessionStorage();
 
